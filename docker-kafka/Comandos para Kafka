@@ -1,0 +1,11 @@
+# Dentro del contenedor de kafka vemos los topics  #
+
+./kafka-topics.sh --list --bootstrap-server localhost:9092
+
+# Ver el contenido de un topic #
+
+./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic flight-delay-ml-request --from-beginning
+
+./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic flight-delay-ml-response --from-beginning
+
+

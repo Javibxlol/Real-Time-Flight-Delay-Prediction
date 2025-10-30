@@ -1,0 +1,13 @@
+# Entramos a la base de datos 'agile_data_science' #
+
+use agile_data_science 
+
+# Mostramos las colecciones existentes en la base de datos actual #
+
+show collections
+
+# Consultamos y mostramos todos los documentos de la colección 'flight_delay_ml_response' #
+
+db.flight_delay_ml_response.find()
+
+
