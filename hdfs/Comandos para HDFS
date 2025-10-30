@@ -1,0 +1,11 @@
+# Creación de una red compartida entre el docker compose de spark y el de hdfs #
+
+docker network create hadoop-spark-net
+
+# Para ver la lista de predicciones dentro del contenedor "namenode" #
+
+hdfs dfs -ls /user/flight_predictions
+
+# Para ver concretamente lo que hay dentro de un json de la lista que obtenemos con el anterior comando #
+ 
+hdfs dfs -cat /user/flight_predictions/part-00000-4a1406f8-d533-4d8a-b728-0ffdd04eb412-c000.json
